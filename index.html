@@ -63,8 +63,15 @@ li a:hover:not(.active) {
     
         h1 {
           color: white;
-        }
+        } 
+        .center-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 90%; /* Occupy 90% of the remaining space */
+      }
         </style>
+       
 </head>
 <body>
 
@@ -75,10 +82,12 @@ li a:hover:not(.active) {
   
 </ul>
 
-<div style="margin-left:10%;padding:1px 16px;height:1000px;">
   <!-- text here-->
-  <img src="Assets/logo.png" alt="Logo">
+  <div class="center-container">
+    <img src="Assets/logo.png" alt="Your Image" width="150">
+
 </div>
+  
 
 </body>
 </html>
