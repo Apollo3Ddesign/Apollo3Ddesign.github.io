@@ -24,21 +24,18 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 10%;
   background-color: #3a38385b;
+  position: fixed;
   height: 100%;
   overflow: auto;
   backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
 }
 
-li {
-  float: left;
-}
-
 li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
@@ -76,7 +73,6 @@ li a:hover:not(.active) {
           align-items: center;
           width: 90%; /* Occupy 90% of the remaining space */
           margin-left: 10%; /* Move the center container to the right */
-          transition: margin-left 0.3s ease;
       }
         </style>
        
