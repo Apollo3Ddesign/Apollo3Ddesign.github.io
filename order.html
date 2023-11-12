@@ -29,6 +29,7 @@ ul {
   position: fixed;
   height: 100%;
   overflow: auto;
+  backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
 }
 
 li a {
@@ -36,16 +37,19 @@ li a {
   color: white;
   padding: 8px 16px;
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 li a.active {
   background-color: #6c1a7c;
   color: white;
+  border-radius: 10px;
 }
 
 li a:hover:not(.active) {
   background-color: #555;
   color: white;
+  border-radius: 10px;
 }
 
 .center-container {
@@ -78,6 +82,7 @@ li a:hover:not(.active) {
 <body>
 
 <ul>
+  <img src="Assets/logo.png" alt="Apoll3D logo" width="60%" style="display: block; margin: 0 auto;">
   <li><a href="index">Home</a></li>
   <li><a href="meet">Meet the team</a></li>
   <li><a class="active" href="order">Order</a></li>
