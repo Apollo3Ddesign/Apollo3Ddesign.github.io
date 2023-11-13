@@ -1,0 +1,34 @@
+body {
+    background-image: url("/Assets/mainBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+.center-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; /* Change this line */
+    width: 90%; /* Occupy 90% of the remaining space */
+    margin-left: 10%; /* Push the container to the right */
+    padding-top: 50px; /* Adjust this value as needed */
+    }
+
+    .Anderson, .Graham {
+        background-color: #5d14626a;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 5px; /* Add some space between the divs */
+        max-width: 75%; /* Limit the maximum width of the divs */
+        min-width: 75%; /* Limit the minimum width of the divs */
+
+    }
+
