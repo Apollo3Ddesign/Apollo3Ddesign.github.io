@@ -9,13 +9,15 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "jojac1lt5l");
     </script>
-      <link rel="icon" type="image/x-icon" href="Assets/logo.png">
-      <title>Order</title>
+    <link rel="icon" type="image/x-icon" href="Assets/logo.png">
+    <title>Order</title>
         <!-- end MS clarity-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="Apoll3D" content="Order" />
-<style>
+        <meta name="Apoll3D" content="A 3d design website" />
+        <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+ <style>
 body {
   margin: 0;
 }
@@ -43,7 +45,9 @@ li a {
 li a.active {
   background-color: #6c1a7c;
   color: white;
+  font-weight: bold;
   border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 li a:hover:not(.active) {
@@ -51,20 +55,14 @@ li a:hover:not(.active) {
   color: white;
   border-radius: 10px;
 }
-.center-container {
-            position: absolute;
-            left: 50%;
-            top: 10px;
-            transform: translatex(-50%);
-        }
 </style>
     <style>
         body {
           background-image: url("Assets/mainBG.jpg");
-          z-index: -1; /* Keep the background behind your content */
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           background-position: top;
+          display: flex;
           justify-content: auto;
           align-items: auto;
           min-height: 100vh;
@@ -74,27 +72,40 @@ li a:hover:not(.active) {
     
         h1 {
           color: white;
-        }
-        </style>
+        } 
+        .center-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Change this line */
+  width: 90%; /* Occupy 90% of the remaining space */
+  margin-left: 10%; /* Push the container to the right */
+  padding-top: 50px; /* Adjust this value as needed */
+}
+
+        </style> 
+       
 </head>
 <body>
 
 <ul>
   <img src="Assets/logo.png" alt="Apoll3D logo" width="60%" style="display: block; margin: 0 auto;">
-  <li><a href="index">Home</a></li>
+  <li><a class="active" href="">Home</a></li>
   <li><a href="meet">Meet the team</a></li>
-  <li><a class="active" href="order">Order</a></li>
+  <li><a href="order">Order</a></li>
+  
 </ul>
 
-<div class="center-container">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW0IHDNazE0Lebvzhb6hFOUnlOvcd-XNEyI97nglsYjZHh0A/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-<div style="margin-left:10%;padding:1px 16px;height:auto;">
   <!-- text here-->
-  
+  <div class="center-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW0IHDNazE0Lebvzhb6hFOUnlOvcd-XNEyI97nglsYjZHh0A/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
 </div>
+  
 
 </body>
 </html>
 
 </body>
+
