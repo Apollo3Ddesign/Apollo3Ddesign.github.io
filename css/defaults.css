@@ -1,3 +1,21 @@
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsla(288, 87%, 42%, 1) 0%, hsla(258, 100%, 50%, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsla(288, 87%, 42%, .7) 0%, hsla(258, 100%, 50%, .7) 100%); 
+}
+/* scroll bar end */
+/* navbar */
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,5 +49,5 @@ ul {
     color: white;
     border-radius: 10px;
   }
-
+/* navbar end */
   
