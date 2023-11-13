@@ -15,7 +15,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Apoll3D" content="A 3d design website" />
-<style>
+        <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+ <style>
 body {
   margin: 0;
 }
@@ -57,14 +59,13 @@ li a:hover:not(.active) {
     <style>
         body {
           background-image: url("Assets/mainBG.jpg");
-          overflow: hidden; /* Add this line to disable scrolling */
           background-repeat: no-repeat;
           background-size: cover;
           background-position: top;
           display: flex;
           justify-content: auto;
           align-items: auto;
-          height: 100vh;
+          min-height: 100vh;
           margin: 0;
           font-family: "Poppins", sans-serif;
         }
@@ -73,14 +74,39 @@ li a:hover:not(.active) {
           color: white;
         } 
         .center-container {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          width: 90%; /* Occupy 90% of the remaining space */
-          margin-left: 10%; /* Move the center container to the right */
-      }
-        </style>
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Change this line */
+  width: 90%; /* Occupy 90% of the remaining space */
+  margin-left: 10%; /* Push the container to the right */
+  padding-top: 50px; /* Adjust this value as needed */
+}
+      .additional-text {
+          color: white;
+        } 
+        .image-container1 {
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-top: auto;
+}
+.text-container {
+  text-align: center;
+}
+.introduction {
+  background-color: #5d14626a;
+  padding: 20px;
+  border-radius: 30px;
+
+}
+
+.pricing {
+  background-color: #5d14626a;;
+  padding: 20px;
+  border-radius: 30px;
+}
+        </style> 
        
 </head>
 <body>
@@ -100,6 +126,36 @@ li a:hover:not(.active) {
     </div>
     <div class="text-container">
       <figcaption><h1>Welcome to Apollo3D</h1></figcaption>
+      <!-- New div for the additional text -->
+    <div class="additional-text">
+<div class="introduction">
+      <h2>What is Apollo3D?</h2>
+      <p>Apollo3D is a 3D design company that was founded by 2 students at CMMS.</p> <br>
+      <h2>What do we sell?</h2>
+      <p>We sell high quality 3D designs such as profile pictures and wallpapers, and possibly 3d prints in the future. </p>
+      </div><br>
+      <div class="pricing">
+      <br><h2>Pricing</h2>
+      <p>The price range is currently</p>
+      <p title="Profile Pictures">3$ PFP's</p>
+      <p>5$ Wallpapers</p>
+      <p>3D prints will be charged based on complexity and size</p>
+      <p>(may be charged more based on complexity)</p>
+      <h3>Below are some of our previous projects.</h3>
+      </div>
+    </div>
+    <!-- style for images below-->
+    <style>
+      .exampleimg img {
+          border-radius: 10px;
+          margin: 5px;
+      }
+  </style>
+  <!-- end of style-->
+<div class="exampleimg" style="display: flex; justify-content: space-around; border-radius: 10px;">
+      <img src="Assets/Insanity.png" alt="Image 1" style="width:50%;">
+      <img src="Assets/Ocean_Blender.png" alt="Image 2" style="width:50%;">
+    </div> 
     </div>
   </div>
 
