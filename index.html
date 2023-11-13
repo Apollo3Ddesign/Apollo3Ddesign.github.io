@@ -75,6 +75,7 @@ li a:hover:not(.active) {
         .center-container {
           display: flex;
           justify-content: center;
+          flex-direction: column;
           align-items: center;
           width: 90%; /* Occupy 90% of the remaining space */
           margin-left: 10%; /* Move the center container to the right */
@@ -94,8 +95,13 @@ li a:hover:not(.active) {
 
   <!-- text here-->
   <div class="center-container">
-    <img src="Assets/logo.png" alt="Your Image" width="250">
-    <br> <figcaption><h1>Welcome to Apollo3D</h1></figcaption>
+    <div class="image-container">
+      <img src="Assets/logo.png" alt="Your Image" width="250">
+    </div>
+    <div class="text-container">
+      <figcaption><h1>Welcome to Apollo3D</h1></figcaption>
+    </div>
+  </div>
 
 </div>
   
