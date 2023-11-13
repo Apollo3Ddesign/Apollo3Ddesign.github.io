@@ -16,116 +16,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Apoll3D" content="A 3d design website" />
         <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
- <style>
-body {
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  background-color: #3a38385b;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
-}
-
-li a {
-  display: block;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-li a.active {
-  background-color: #6c1a7c;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-  border-radius: 10px;
-}
-</style>
-    <style>
-        body {
-          background-image: url("Assets/mainBG.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: top;
-          display: flex;
-          justify-content: auto;
-          align-items: auto;
-          min-height: 100vh;
-          margin: 0;
-          font-family: "Poppins", sans-serif;
-        }
-    
-        h1 {
-          color: white;
-        } 
-        .center-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; /* Change this line */
-  width: 90%; /* Occupy 90% of the remaining space */
-  margin-left: 10%; /* Push the container to the right */
-  padding-top: 50px; /* Adjust this value as needed */
-}
-      .additional-text {
-          color: white;
-        } 
-        .image-container1 {
-  display: block;
-  clear: both;
-  text-align: center;
-  margin-top: auto;
-}
-.text-container {
-  text-align: center;
-}
-.introduction {
-  background-color: #5d14626a;
-  padding: 20px;
-  border-radius: 30px;
-
-}
-
-.pricing {
-  background-color: #5d14626a;;
-  padding: 20px;
-  border-radius: 30px;
-}
-        </style> 
-       
+                <link rel="stylesheet" type="text/css" href="css/index.css">
+                <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </head>
 <body>
-
+<!-- navbar -->
 <ul>
-  <img src="Assets/logo.png" alt="Apoll3D logo" width="60%" href="index" style="display: block; margin: 0 auto;">
+  <img src="Assets/logo.png" alt="Apoll3D logo" width="60%" style="display: block; margin: 0 auto;">
   <li><a class="active" href="">Home</a></li>
   <li><a href="meet">Meet the team</a></li>
   <li><a href="order">Order</a></li>
-  
-</ul>
-
-  <!-- text here-->
+  </ul>
+<!-- end navbar-->
+<!-- start of body -->
   <div class="center-container">
     <div class="image-container">
       <img src="Assets/logo.png" alt="Your Image" width="250">
     </div>
     <div class="text-container">
       <figcaption><h1>Welcome to Apollo3D</h1></figcaption>
+      <figcaption><h6>This site is in active development, please report any bugs to gmblackburn@students.wcpss.net</h6></figcaption>
       <!-- New div for the additional text -->
     <div class="additional-text">
 <div class="introduction">
@@ -144,14 +54,7 @@ li a:hover:not(.active) {
       <h3>Below are some of our previous projects.</h3>
       </div>
     </div>
-    <!-- style for images below-->
-    <style>
-      .exampleimg img {
-          border-radius: 10px;
-          margin: 5px;
-      }
-  </style>
-  <!-- end of style-->
+
 <div class="exampleimg" style="display: flex; justify-content: space-around; border-radius: 10px;">
       <img src="Assets/Insanity.png" alt="Image 1" style="width:50%;">
       <img src="Assets/Ocean_Blender.png" alt="Image 2" style="width:50%;">
