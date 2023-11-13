@@ -53,3 +53,14 @@ ul {
   }
 /* navbar end */
   
+/* footer */
+body::after {
+  content: "Site made by Graham (.xordas)" !important;
+  position: fixed !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  padding: 10px !important;
+  color: #fff !important; /* Change this to the color you want for the text */
+  display: block !important; /* Ensure the pseudo-element is being rendered */
+}
+/* footer end */
