@@ -56,11 +56,12 @@ ul {
 /* footer */
 body::after {
   content: "Site made by Graham (.xordas)" !important;
+  font-size: 10px !important;
   position: fixed !important;
   right: 0 !important;
   bottom: 0 !important;
   padding: 10px !important;
-  color: #fff !important; /* Change this to the color you want for the text */
-  display: block !important; /* Ensure the pseudo-element is being rendered */
+  color: #fff !important; 
+  display: block !important; 
 }
 /* footer end */
