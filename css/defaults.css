@@ -9,12 +9,13 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, hsla(288, 87%, 42%, 1) 0%, hsla(258, 100%, 50%, 1) 100%);
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: background 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, hsla(288, 87%, 42%, .7) 0%, hsla(258, 100%, 50%, .7) 100%); 
-  border-radius: 10px;
+  border-radius: 15px;
 }
 /* scroll bar end */
 /* navbar */
@@ -28,6 +29,8 @@ ul {
     height: 100%;
     overflow: auto;
     backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
+    transition: width 0.3s ease-in-out;
+    role: "navigation";
   }
   
   li a {
@@ -45,12 +48,26 @@ ul {
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
   }
+
+  li a.active:hover {
+    background-color: #6c1a7c79;
+    color: white;
+    border-radius: 10px;
+}
   
   li a:hover:not(.active) {
     background-color: #555;
     color: white;
     border-radius: 10px;
   }
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  ul {
+      width: 100%;
+      position: static;
+  }
+}
 /* navbar end */
   
 /* footer */
