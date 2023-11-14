@@ -30,7 +30,6 @@ ul {
     overflow: auto;
     backdrop-filter: blur(7px); /* Adjust the blur amount as needed */
     transition: width 0.3s ease-in-out;
-    role: "navigation";
   }
   
   li a {
